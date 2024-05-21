@@ -54,7 +54,9 @@ p{
 .section{
     padding: 100px 0;
 }
-
+.section{
+    padding: 100px 0;
+}
 .boxed{
     max-width:1200px;
     margin-inline:auto;
