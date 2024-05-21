@@ -159,3 +159,36 @@ p{
     box-sizing: border-box;
 
 }
+
+.aligncenter{
+    align-items: center;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #FFF;
+    z-index: 800;
+    padding-block: 10px;
+    box-shadow: 1px 1px 25px rgba(0, 0, 0, 70);
+}
+
+.header-logo img{
+    width: 40px;
+}
+
+.header-menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.header-menu li a{
+    text-decoration: none;
+    color:#000;
+    padding: 10px 20px;
+    display: block;
+    box-sizing: border-box;
+}
