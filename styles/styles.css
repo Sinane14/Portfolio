@@ -176,7 +176,7 @@ header{
 }
 
 .header-logo img{
-    width: 40px;
+    width: 80px;
 }
 
 .header-menu{
@@ -191,4 +191,9 @@ header{
     padding: 10px 20px;
     display: block;
     box-sizing: border-box;
+}
+
+.header-menu li a:hover{
+    color: #4d6f7d;
+    transition: 0.5s;
 }
