@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Sinane Adi 2024</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css" type="text/css">
+    <link rel="stylesheet" href="styles/styles_e5.css" type="text/css">
+    <link rel="icon" href="img/logo.ico">
+</head>
+<body>
+    <header>
+        <div class="boxed">
+            <div class="flex aligncenter space-between">
+                <a href="index.html" class="header-logo">
+                    <img src="img/logo.jpg" alt="Logo">
+                </a>
+                <ul class="header-menu">
+                    <li><a href="index.html">Portfolio</a></li>
+                    <li><a href="cv.html">Mon C.V.</a></li>
+                    <li><a href="project.html">Mes Réalisations</a></li>
+                    <li><a href="e4.html">E4</a></li>
+                    <li><a href="e5.html">E5</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="section2">
+        <div class="boxed2 text-center">
+            <h2>Laclick Project Forum</h2>
+            <h3>Présentation</h3>
+            <p>Ce Forum permet aux utilisateurs de se retrouver afin de découvrir de nouveaux sujets;
+                de partager leurs nouvelles passions et de donner leur avis. 
+                Le Forum vise les étudiants en BTS SIO de La Click pour leur permettre de présenter leurs projets. 
+            </p>
+            <h3>Procédure d'accès et d'utilisation</h3>
+            <p>Laclick Project Forum est une application web en php qui fonctionne avec une base de donnée.
+                Si ce n'est pas déjà fait, vous devez installer l'application XAMPP pour accéder à PhpMyAdmin.
+                Pour cela, je vous invite à suivre le tutoriel sur youtube sur l'installation de XAMPP: <a href="https://www.youtube.com/watch?v=bL3jfSxFzu4" id="astl">Tuto</a> (Jusqu'à 2min23).
+                Importer les fichiers forum du github et les décompresser dans le fichier htdocs de XAMPP: xampp/htdocs.
+                Dans l'application XAMPP, lancez Apache et Mysql.
+                Appuyez sur le bouton Admin de MySQL.
+                Veuillez importer sur PhpMyAdmin la base de donnée "forum.sql" accessible dans les fichiers Forum que vous avez décompressé.
+                Activer Apache et MySQL sur XAMPP.
+                Enfin, allez sur le navigateur et tapez localhost.
+            </p>
+            <p>Projet accessible sur github au lieu suivant : <a href="https://github.com/Sinane14/Forum" id="astl">Lien Github</a></p>
+            <h3>Fiche E5</h3>
+            <embed src="ressources/Fiche_E5_Forum.pdf" type="application/pdf" width="100%" height="600px"/>
+            <h3>Cahier des Charges</h3>
+            <embed src="ressources/Cahier_des_Charges_Forum.pdf" type="application/pdf" width="100%" height="600px"/>
+        </div>  
+    </div>
+
+    <div class="section2">
+        <div class="boxed2 text-center">
+            <h2>Le Super Taquin</h2>
+            <h3>Présentation</h3>
+            <p>Le Taquin est un jeu ayant pour objectif de former une image à l'aide de cases le plus rapidement possible.
+            </p>
+            <h3>Procédure d'accès et d'utilisation</h3>
+            <h4>Installation</h4>
+            <p>Le Super Taquin est une application en C# et qui fonctionne avec la base de donnée du Forum.
+                Si ce n'est pas déjà fait, vous devez installer l'application XAMPP pour accéder à PhpMyAdmin.
+                Pour cela, je vous invite à suivre le tutoriel sur youtube sur l'installation de XAMPP: <a href="https://www.youtube.com/watch?v=bL3jfSxFzu4" id="astl">Tuto</a> (Jusqu'à 2min23).
+                Importez et décompressez les fichiers Taquin du github.
+                Téléchargez Visual Studio 2022. 
+                Pour cela, je vous invite à suivre le tutoriel sur youtube pour l'installation: <a href="https://www.youtube.com/watch?v=H7vw4oLVocU" id="astl">Tuto</a>
+                Ouvrez le jeu Taquin.sln sur Visual Studio 2022.
+                Dans l'application XAMPP, lancez Apache et Mysql.
+                Veuillez importer sur PhpMyAdmin la base de donnée "forum.sql" accessible dans les fichiers Taquin que vous avez décompressé.
+                Enfin, démarrez le code.
+            </p>
+            <h4>Connexion</h4>
+            <p>Pour pouvoir jouer, l'application vous demande de vous connecter. Le jeu est accessible uniquement aux utilisateurs du Forum. Vous devez alors être un utilisateur du Forum.
+            Pour cela, vous devez créer un compte utilisateur dans le Forum.
+            Quand l'inscription est faite, vous vous connectez avec vos identifiants dans le jeu et vous pouvez jouer.
+            Si vous avez des problèmes de connexion, allez sur "Problème de connexion ?" dans Connexion.
+            <p>Projet accessible sur github au lien suivant: <a href="https://github.com/Sinane14/Taquin" id="astl">Lien Github</a></p>
+            <h3>Fiche E5</h3>
+            <embed src="ressources/Fiche_E5_Taquin.pdf" type="application/pdf" width="100%" height="600px"/>
+            <h3>Cahier des Charges</h3>
+            <embed src="ressources/Cahier_des_Charges_Jeu_Du_Taquin.pdf" type="application/pdf" width="100%" height="600px"/>
+        </div>  
+    </div>
+</body>
+</html>
