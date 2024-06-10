@@ -258,6 +258,10 @@ a {
     color: #FFF;
 }
 
+#astl {
+    color: blue;
+}
+
 @media screen and (max-width: 768px) {
     .slider-content h1 {
         font-size: 3rem; 
