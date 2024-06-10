@@ -1,5 +1,11 @@
-.boxed1{
-    max-width:1200px;
-    margin-inline:auto;
-    height: 1000px;
+.boxed1 {
+    max-width: 100%;
+    margin: 0 auto;
+    height: auto; 
+}
+
+@media screen and (max-width: 768px) {
+    .boxed1 {
+        padding: 10px;
+    }
 }

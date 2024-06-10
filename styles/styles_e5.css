@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+@media screen and (max-width: 768px) {
+    /* Réduire la taille du logo dans le header */
+    .header-logo img {
+        width: 60
+    }
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
