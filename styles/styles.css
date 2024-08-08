@@ -13,7 +13,7 @@ body {
     min-height: 80vh;
     aspect-ratio: 16/9;
     background-color: #000;
-    position: relative;
+    position: relative; /* Pour positionner le contenu de manière absolue */
 }
 
 .slider-background {
@@ -38,23 +38,23 @@ h1 {
 
 h2 {
     font-size: 2rem;
-    margin-bottom: 40px;
+    margin-bottom: 40px; 
 }
 
 h3 {
     font-size: 1.5rem;
-    margin-bottom: 10px;
+    margin-bottom: 10px; 
 }
 
 h4 {
     font-size: 1.3rem;
-    margin-bottom: 10px;
+    margin-bottom: 10px; 
 }
 
 p {
     font-size: 1rem;
     line-height: 1.5rem;
-    margin-bottom: 10px;
+    margin-bottom: 10px; 
 }
 
 .slider-content p {
@@ -64,11 +64,11 @@ p {
 }
 
 .section {
-    padding: 120px 0 50px;
+    padding: 120px 0 50px; 
 }
 
 .section:first-child {
-    margin-top: 70px;
+    margin-top: 70px; 
 }
 
 .boxed {
@@ -76,15 +76,9 @@ p {
     margin: 0 auto;
 }
 
-.boxed1 {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
 .flex {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Ajout de flex-wrap pour gérer les éléments sur plusieurs lignes */
 }
 
 .dark {
@@ -106,14 +100,10 @@ p {
 
 .w25 {
     width: 25%;
-    min-width: 200px; /* Ajouter une largeur minimale pour éviter que les éléments ne deviennent trop petits */
-    flex: 1;
 }
 
 .w32 {
     width: 32%;
-    min-width: 200px; /* Ajouter une largeur minimale pour éviter que les éléments ne deviennent trop petits */
-    flex: 1;
 }
 
 .space-between {
@@ -124,17 +114,17 @@ p {
     gap: 20px;
 }
 
-.wrap {
-    flex-wrap: wrap;
-}
-
+/* Section compétences */
 .skill {
     background: #FFF;
     border-radius: 15px;
     padding: 20px;
     box-sizing: border-box;
-    text-align: center;
-    flex: 1 1 200px; /* Permet aux éléments de prendre la largeur disponible avec une taille minimum */
+    text-align: center; /* Centrer le texte pour un meilleur alignement */
+    margin-bottom: 20px; /* Espacement entre les compétences pour petits écrans */
+    width: 100%; /* Assurer que chaque compétence prend 100% de l'espace disponible */
+    max-width: 200px; /* Limiter la taille des compétences */
+    flex: 1 1 200px; /* Permet de s'adapter à différentes tailles d'écrans */
 }
 
 .skill img {
@@ -142,18 +132,22 @@ p {
     height: 100px;
     aspect-ratio: 1/1;
     object-fit: contain;
+    margin-bottom: 15px; /* Espacement entre l'image et le titre */
+    max-width: 100%; /* S'assurer que l'image ne dépasse pas la largeur du conteneur */
+    height: auto; /* Maintenir le ratio de l'image */
 }
 
 .skill h3 {
     color: #000;
     margin-top: 10px;
+    font-size: 1.2rem;
 }
 
 .realisation {
     height: auto;
     aspect-ratio: 1/1;
     position: relative;
-    flex: 1 1 300px; /* Permet aux éléments de s'ajuster avec une taille minimale */
+    max-width: 100%; /* Assurer que les réalisations ne dépassent pas le conteneur */
 }
 
 .realisation h3 {
@@ -215,7 +209,6 @@ p {
 .value {
     display: block;
     font-size: 1.2rem;
-    word-wrap: break-word; /* Permet de couper les mots longs pour éviter le débordement */
 }
 
 .contact {
@@ -223,9 +216,6 @@ p {
     border-radius: 15px;
     padding: 30px;
     box-sizing: border-box;
-    word-wrap: break-word; /* Permet de couper les mots longs pour éviter le débordement */
-    text-align: center; /* Centrer le contenu pour un meilleur alignement */
-    max-width: 100%; /* S'assure que le conteneur ne dépasse pas l'écran */
 }
 
 .aligncenter {
@@ -275,41 +265,47 @@ a {
     color: blue;
 }
 
+/* Media query pour écrans de 768px et moins */
 @media screen and (max-width: 768px) {
     .slider-content h1 {
-        font-size: 3rem;
+        font-size: 3rem; 
     }
 
     .slider-content p {
-        font-size: 1.5rem;
+        font-size: 1.5rem; 
     }
 
     .w40, .w60 {
-        width: 100%;
+        width: 100%; 
     }
 
     .skill, .realisation {
-        width: 48%;
-        flex: 1 1 48%;
+        width: 48%; /* Passer de 25% à 48% pour deux éléments par ligne */
+        margin-bottom: 20px; /* Ajouter un espacement en bas pour chaque compétence */
     }
 
-    .contact {
-        padding: 20px;
-        font-size: 0.9rem;
+    .skill img {
+        width: 60px; /* Réduire la taille des images pour s'adapter aux petits écrans */
+        height: 60px;
     }
 
-    .value {
-        font-size: 1rem;
+    .skill h3 {
+        font-size: 1rem; /* Réduire la taille des titres pour petits écrans */
     }
 }
 
+/* Media query pour écrans de 480px et moins */
 @media screen and (max-width: 480px) {
-    .contact {
-        padding: 15px;
+    .w25 {
+        width: 100%; /* Une seule compétence par ligne pour les très petits écrans */
     }
 
-    .value {
-        font-size: 0.9rem;
-        word-wrap: break-word;
+    .skill img {
+        width: 50px; /* Réduire encore la taille des images */
+        height: 50px;
+    }
+
+    .skill h3 {
+        font-size: 0.9rem; /* Réduire la taille des titres */
     }
 }
