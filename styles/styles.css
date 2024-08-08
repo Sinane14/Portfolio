@@ -13,6 +13,7 @@ body {
     min-height: 80vh;
     aspect-ratio: 16/9;
     background-color: #000;
+    position: relative; /* Pour positionner le contenu de manière absolue */
 }
 
 .slider-background {
@@ -75,20 +76,14 @@ p {
     margin: 0 auto;
 }
 
-.boxed1 {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px; 
-}
-
 .flex {
     display: flex;
+    flex-wrap: wrap; /* Ajout de flex-wrap pour gérer les éléments sur plusieurs lignes */
 }
 
 .dark {
     background-color: #000;
     color: #FFF;
-    padding: 50px 0; /* Réduire le padding pour petits écrans */
 }
 
 .w40 {
@@ -119,10 +114,6 @@ p {
     gap: 20px;
 }
 
-.wrap {
-    flex-wrap: wrap;
-}
-
 /* Section compétences */
 .skill {
     background: #FFF;
@@ -131,6 +122,9 @@ p {
     box-sizing: border-box;
     text-align: center; /* Centrer le texte pour un meilleur alignement */
     margin-bottom: 20px; /* Espacement entre les compétences pour petits écrans */
+    width: 100%; /* Assurer que chaque compétence prend 100% de l'espace disponible */
+    max-width: 200px; /* Limiter la taille des compétences */
+    flex: 1 1 200px; /* Permet de s'adapter à différentes tailles d'écrans */
 }
 
 .skill img {
@@ -139,6 +133,8 @@ p {
     aspect-ratio: 1/1;
     object-fit: contain;
     margin-bottom: 15px; /* Espacement entre l'image et le titre */
+    max-width: 100%; /* S'assurer que l'image ne dépasse pas la largeur du conteneur */
+    height: auto; /* Maintenir le ratio de l'image */
 }
 
 .skill h3 {
@@ -151,6 +147,7 @@ p {
     height: auto;
     aspect-ratio: 1/1;
     position: relative;
+    max-width: 100%; /* Assurer que les réalisations ne dépassent pas le conteneur */
 }
 
 .realisation h3 {
